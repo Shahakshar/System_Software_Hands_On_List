@@ -1,5 +1,6 @@
 // MT2024014
 // Akshar Shah
+
 /*
 Write a program to copy file1 into file2 ($cp file1 file2).
 */
@@ -11,23 +12,23 @@ Write a program to copy file1 into file2 ($cp file1 file2).
 #include<fcntl.h>
 
 int main(int arg, char *args[]) {
-	int fd1 = open(args[1], O_RDONLY);
-	if (fd1 == -1) {
+	int file_d = open(args[1], O_RDONLY);
+	if (file_d == -1) {
 		printf("Error while opening source file");
-		close(fd1);
+		close(file_d);
 	}
-	int fd2 = open(args[2], O_WRONLY | O_CREAT, S_IRWXU);
-	if (fd2 == -1) {
+	int file_d1 = open(args[2], O_WRONLY | O_CREAT, S_IRWXU);
+	if (file_d1 == -1) {
 		printf("Error While Creating And Opening");
-		close(fd2);
+		close(file_d1);
 	}
 	char content;
-	while (read(fd1, &content, 1)) {
-		write(fd2, &content,1);
+	while (read(file_d, &content, 1)) {
+		write(file_d1, &content,1);
 	}
 	printf("Copy Successfully");
-	close(fd1);
-	close(fd2);
+	close(file_d);
+	close(file_d1);
 	return 0;
 }
 

@@ -1,7 +1,9 @@
 // Akshar Shah
 // MT2024014
 
-/* write a program to open an existing file with read write mode. try O_EXCL flag also.
+/* 
+write a program to open an existing file with read write mode. 
+try O_EXCL flag also.
 */
 
 #include<stdio.h>

@@ -9,17 +9,18 @@ Write a program to open a file in read only mode, read line by line and display 
 #include<sys/stat.h>
 #include<fcntl.h>
 #include<unistd.h>
+
 int main(int arg, char *args[]) {
 	char buffer[1024];
-	int fd1;
-	fd1 = open("source", O_RDONLY);
+	int file_d;
+	file_d = open("source", O_RDONLY);
 
-	while (read(fd1, &buffer, 1)) {
+	while (read(file_d, &buffer, 1)) {
 		if (buffer[0] == '\n') 
 			getchar();
 		else 
 			printf("%c", buffer[0]);
 	}
-	close(fd1);
+	close(file_d);
 	return 0;
 }

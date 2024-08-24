@@ -20,20 +20,20 @@ j. time of last change
 #include<time.h>
 
 int main(int arg, char *args[]) {
-	struct stat s;
+	struct stat ak;
 
-	stat(args[1], &s);
-	printf("id of device=%ld\n", s.st_dev);
-	printf("inode=%ld\n", s.st_ino);
-	printf("file type and mode=%d\n", s.st_mode);
-	printf("number hardlink=%ld\n", s.st_nlink);
-	printf("user id=%d\n", s.st_uid);
-	printf("group id=%d\n", s.st_gid);
-	printf("device id=%ld\n", s.st_rdev);
-	printf("total size in byte=%ld\n", s.st_size);
-	printf("block size of fileSystem=%ld\n", s.st_blksize);
-	printf("Last Access time=%s", ctime(&(s.st_atim).tv_sec));
-	printf("Last modified time=%s", ctime(&(s.st_mtim).tv_sec));
-	printf("Last status change time=%s", ctime(&(s.st_ctim).tv_sec));
+	stat(args[1], &ak);
+	printf("id of device=%ld\n", ak.st_dev);
+	printf("inode=%ld\n", ak.st_ino);
+	printf("file type and mode=%d\n", ak.st_mode);
+	printf("number hardlink=%ld\n", ak.st_nlink);
+	printf("user id=%d\n", ak.st_uid);
+	printf("group id=%d\n", ak.st_gid);
+	printf("device id=%ld\n", ak.st_rdev);
+	printf("total size in byte=%ld\n", ak.st_size);
+	printf("block size of fileSystem=%ld\n", ak.st_blksize);
+	printf("Last Access time=%s", ctime(&(ak.st_atim).tv_sec));
+	printf("Last modified time=%s", ctime(&(ak.st_mtim).tv_sec));
+	printf("Last status change time=%s", ctime(&(ak.st_ctim).tv_sec));
 	return 0;
 }

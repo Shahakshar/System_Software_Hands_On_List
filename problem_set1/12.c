@@ -11,9 +11,9 @@ Write a program to find out the opening mode of a file. Use fcntl.
 
 int main(int argv, char *argc[]) {
 	int fd = open(argc[1], O_RDONLY);
-	int fmode = fcntl(fd, F_GETFL);
-	printf("%d\n", fmode);
-	int accessMode = fmode & O_ACCMODE;
+	int f_mode = fcntl(fd, F_GETFL);
+	printf("%d\n", f_mode);
+	int accessMode = f_mode & O_ACCMODE;
 	printf("%d\n", accessMode);
 	switch(accessMode) {
 		case O_RDWR:
@@ -28,6 +28,8 @@ int main(int argv, char *argc[]) {
 		deafult:
 			break;
 	}
+	close(fd);
+	close(f_mode);
 	return 0;
 }
 

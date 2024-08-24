@@ -15,7 +15,7 @@ b. program should be able to identify any type of a file.
 
 int main(int arg, char *args[]) {
 	struct stat s;
-	int o = lstat(args[1], &s);
+	int a = lstat(args[1], &s);
 	printf("file type:");
 	switch (s.st_mode & S_IFMT) {
 		case S_IFBLK:

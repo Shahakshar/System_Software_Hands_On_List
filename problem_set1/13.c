@@ -11,11 +11,11 @@ Write a program to wait for a STDIN for 10 seconds using select. Write a proper 
 
 int main() {
 	struct timeval t;
-	fd_set fd;
-	FD_SET(0, &fd);
+	fd_set file_d;
+	FD_SET(0, &file_d);
 	t.tv_sec = 10;
 	t.tv_usec = 0;
-	int o = select(1, &fd, NULL, NULL, &t);
+	int o = select(1, &file_d, NULL, NULL, &t);
 	printf("%d\n", o);
 	if (o == -1) {
 		printf("ERROR OCCURED");

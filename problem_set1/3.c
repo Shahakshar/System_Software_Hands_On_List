@@ -1,7 +1,9 @@
 // Akshar Shah
 // MT2024014
 
-/* write a program to create a file and print the file descriptor value. use creat() system call.
+/* 
+write a program to create a file and print the file descriptor value. 
+use creat() system call.
 */
 
 #include<stdio.h>

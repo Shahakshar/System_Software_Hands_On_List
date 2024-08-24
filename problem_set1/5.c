@@ -2,8 +2,7 @@
 // MT2024014
 
 /*
-Write a program to create five new files with infinite loop. Execute the program in the background
-and check the file descriptor table at /proc/pid/fd.
+Write a program to create five new files with infinite loop. Execute the programin the background and check the file descriptor table at /proc/pid/fd.
 */
 
 #include<stdio.h>
