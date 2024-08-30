@@ -6,6 +6,7 @@ Write a program to open a file with read write mode, write 10 bytes, move the fi
 a. check the return value of lseek
 b. open the file with od and check the empty spaces in between the data.
 */
+// Date: 23/08/24
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/stat.h>

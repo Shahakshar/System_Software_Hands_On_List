@@ -1,3 +1,9 @@
+/*
+name: 1.c
+author: Akshar Shah
+Description: Fifo(using system call)
+Date: 14/08/24
+*/
 #include<unistd.h>
 #include<stdio.h>
 #include<sys/types.h>

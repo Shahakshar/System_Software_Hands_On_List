@@ -5,7 +5,7 @@
 write a program to open an existing file with read write mode. 
 try O_EXCL flag also.
 */
-
+// Date: 21/08/24
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/stat.h>

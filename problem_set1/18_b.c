@@ -1,3 +1,14 @@
+// Akshar Shah
+// MT2024014
+/*
+Write a program to perform Record locking.
+a. Implement write lock
+b. Implement read lock
+Create three records in a file. Whenever you access a particular 
+record, first lock it then modify/access to avoid race condition.
+*/
+// Date: 25/08/24
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/stat.h>
@@ -38,3 +49,7 @@ int main() {
 	fcntl(fd, F_SETLK, &lock);
 	printf("Booked\n");
 }
+
+// doubt regarding reading jab koi read kar raha hai tab write allow nahi hoga 
+// and jab koi write kar raha hoga to vo read nahi kar payega 
+// and at same time more than 1 person can read the db ye ho sakta hai.

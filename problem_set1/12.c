@@ -3,6 +3,7 @@
 /*
 Write a program to find out the opening mode of a file. Use fcntl.
 */
+// Date: 23/08/24
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/stat.h>

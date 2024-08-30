@@ -3,6 +3,7 @@
 /*
 Write a program to display the environmental variable of the user (use environ).
 */
+// Date: 24/08/24
 #include<stdio.h>
 #include<unistd.h>
 extern char **environ;

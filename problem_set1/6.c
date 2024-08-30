@@ -5,7 +5,7 @@
 Write a program to take input from STDIN and display on STDOUT. 
 Use only read/write system calls.
 */
-
+// Date: 21/08/24
 #include<stdio.h>
 #include<unistd.h>
 

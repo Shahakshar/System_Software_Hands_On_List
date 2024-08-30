@@ -8,6 +8,7 @@ a. use dup
 b. use dup2
 c. use fcntl
 */
+// Date:23/08/24
 
 #include<unistd.h>
 #include<sys/stat.h>

@@ -1,3 +1,10 @@
+// Akshar Shah
+// MT2024014
+/*
+Write a program to perform mandatory locking.
+a. Implement write lock 
+*/
+// Date: 24/08/24
 #include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>

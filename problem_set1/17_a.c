@@ -1,3 +1,10 @@
+// Akshar Shah
+// MT2024014
+/*
+Write a program to simulate online ticket reservation. Implement write lock
+Write a program to open a file, store a ticket number and exit.
+*/
+// Date: 25/08/24
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>

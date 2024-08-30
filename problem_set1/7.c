@@ -4,7 +4,7 @@
 /*
 Write a program to copy file1 into file2 ($cp file1 file2).
 */
-
+// Date: 21/08/24
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/stat.h>

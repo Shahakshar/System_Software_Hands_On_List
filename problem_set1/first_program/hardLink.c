@@ -1,3 +1,9 @@
+/*
+name: 1.b
+Author: Akshar Shah
+Description: HardLink(link system call)
+Date: 13/08/24
+*/
 #include<unistd.h>
 #include<stdio.h>
 
