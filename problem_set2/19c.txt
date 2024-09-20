@@ -1,0 +1,16 @@
+/*
+============================================================================
+Author : Akshar Shah
+Roll No: MT2024014
+Date: 20/09/24
+19. Create a FIFO file by
+                c. use strace command to find out, which command (mknod or mkfifo) is better.
+                
+============================================================================
+*/
+
+ANSWER :
+
+mknod and mkfifo() both call mknod() in background so we can conclude that mknod() is faster
+because mkfifo() has some extra system calls before calling mknod() as mknod() is an actual 
+system call and mkfifo() is a library function

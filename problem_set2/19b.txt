@@ -1,0 +1,23 @@
+/*
+============================================================================
+Author : Akshar Shah
+Roll No: MT2024014
+Date: 20/09/24
+19. Create a FIFO file by
+                b. mkfifo command
+============================================================================
+*/
+
+
+/*
+COMMAND :
+
+$ mkfifo fifo2
+$
+
+CHECK :
+
+$ ls -l fifo2
+prw-rw-r-- 1 akshar akshar 0 Sep 20 16:07 fifo2
+
+*/

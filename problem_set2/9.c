@@ -3,6 +3,8 @@
 Author: Akshar Shah
 Roll No: MT2024014
 Date: 20/09/24
+9. Write a program to ignore a SIGINT signal then reset the default action of the SIGINT
+	signal - Use signal system call.
 
 ==================================================
 */

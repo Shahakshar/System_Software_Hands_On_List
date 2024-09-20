@@ -3,6 +3,8 @@
 Author: Akshar Shah
 Roll No: MT2024014
 Date: 20/09/24
+8. Write a separate program using signal system call to catch the following signals.
+	c. SIGFPE
 
 ==================================================
 */
