@@ -3,7 +3,8 @@
 Author: Akshar Shah
 Roll No: MT2024014
 Date: 19/09/24
-
+5. Write a program to print the system limitation of
+	c. number of clock ticks (jiffy) per second.
 
 
 ==================================================

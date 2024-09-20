@@ -3,7 +3,8 @@
 Author: Akshar Shah
 Roll No: MT2024014
 Date: 19/09/2024
-
+5. Write a program to print the system limitation of
+	f. total number of pages in the physical memory.
 
 ==================================================
 */
