@@ -8,6 +8,7 @@ Date: 20/09/24
 ==================================================
 */
 
+// writer.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
@@ -21,7 +22,6 @@ int main() {
         perror("mkfifo");
         exit(EXIT_FAILURE);
     }
-
     int fd = open(fifo_path, O_WRONLY);
     if (fd == -1) {
         perror("open");

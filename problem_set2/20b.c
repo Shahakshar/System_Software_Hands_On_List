@@ -17,21 +17,21 @@ Date: 20/09/24
 int main() {
     const char *fifo_path = "/tmp/myfifo";
 
-    if (mkfifo(fifo_path, 0666) == -1) {
-        perror("mkfifo");
-        exit(EXIT_FAILURE);
-    }
-
-    int fd = open(fifo_path, O_WRONLY);
+    int fd = open(fifo_path, O_RDONLY);
     if (fd == -1) {
         perror("open");
         exit(EXIT_FAILURE);
     }
 
-    char message[] = "Hello from the writer program!\n";
-    write(fd, message, sizeof(message));
+    char buffer[100];
+    int num_bytes = read(fd, buffer, sizeof(buffer) - 1);
+    if (num_bytes == -1) {
+        perror("read");
+        exit(EXIT_FAILURE);
+    }
 
-    printf("Writer: Message sent to FIFO.\n");
+    buffer[num_bytes] = '\0';
+    printf("Reader: Message received from FIFO: %s\n", buffer);
 
     close(fd);
     return 0;
