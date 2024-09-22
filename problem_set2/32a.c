@@ -3,7 +3,8 @@
 Author: Akshar Shah
 Roll No: MT2024014
 Date: 20/09/24
-
+32. Write a program to implement semaphore to protect any critical section.
+	a. rewrite the ticket number creation program using semaphore
 
 ==================================================
 */

@@ -3,7 +3,7 @@
 Author: Akshar Shah
 Roll No: MT2024014
 Date: 20/09/24
-
+c. protect multiple pseudo resources ( may be two) using counting semaphore
 
 ==================================================
 */

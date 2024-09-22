@@ -3,7 +3,7 @@
 Author: Akshar Shah
 Roll No: MT2024014
 Date: 20/09/24
-
+d. remove the created semaphore
 
 ==================================================
 */

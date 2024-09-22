@@ -3,6 +3,7 @@
 Author: Akshar Shah
 Roll No: MT2024014
 Date: 20/09/24
+33. Write a program to communicate between two machines using socket.
 
 ==================================================
 */

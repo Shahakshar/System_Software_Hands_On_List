@@ -3,6 +3,9 @@
 Author: Akshar Shah
 Roll No: MT2024014
 Date: 20/09/24
+34. Write a program to create a concurrent server.
+a. use fork
+b. use pthread_create
 
 ==================================================
 */
